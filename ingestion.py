@@ -10,10 +10,11 @@ from langchain_pinecone import PineconeVectorStore
 from langchain_openai import OpenAIEmbeddings
 
 
-INDEX_NAME = "langchain-doc-index"
+INDEX_NAME = "langchain-docs-index"
 
 embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 
+print(os.environ['OPENAI_API_KEY'])
 
 def ingest_docs():
     loader = ReadTheDocsLoader(

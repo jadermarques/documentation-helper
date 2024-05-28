@@ -9,7 +9,7 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain_pinecone import PineconeVectorStore
 
 
-INDEX_NAME = "langchain-doc-index"
+INDEX_NAME = "langchain-docs-index"
 
 
 def run_llm(query: str, chat_history: List[Dict[str, Any]] = []):
